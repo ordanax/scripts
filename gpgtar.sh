@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Вы хотите зашифровать данные или расшифровать?'
-read -p "1 - Зашифровать, 2 - Рашифровать: " gpg_set
+read -p "1 - Зашифровать, 2 - Расшифровать: " gpg_set
 if [[ $gpg_set == 1 ]]; then
  read -p "Введите имя файла, который вы хотите зашифровать: " filename
  tar -czf $filename.tar.gz $filename && gpg -c $filename.tar.gz
