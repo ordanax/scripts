@@ -8,5 +8,5 @@ if [[ $gpg_set == 1 ]]; then
 elif [[ $gpg_set == 2 ]]; then
   read -p "Введите имя файла, который вы хотите расшифровать: " filename
   gpg $filename.tar.gz.gpg && tar -xzf $filename.tar.gz -C $PWD
-  rm -rf $filename.tar.gz  $filename.tar.gz.gpg 
+  rm -rf $filename.tar.gz 
 fi
