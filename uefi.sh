@@ -20,21 +20,21 @@ echo 'создание разделов'
   echo;
 
   echo w;
-) | fdisk /dev/sda
+) | fdisk /dev/sdc
 
 #root
-mkfs.ext4 /dev/sda1 -L root
-mount /dev/sda1 /mnt
+mkfs.ext4 /dev/sdc1 -L root
+mount /dev/sdc1 /mnt
 
 #boot
-mkfs.fat -F32 /dev/sda2 -L boot
+mkfs.fat -F32 /dev/sdc2 -L boot
 mkdir -p /mnt/boot/efi
-mount /dev/sda1 /mnt/boot/efi
+mount /dev/sdc1 /mnt/boot/efi
 
 #home
-mkfs.ext4 /dev/sda3 -L home
+mkfs.ext4 /dev/sdc3 -L home
 mkdir -p /mnt/home
-mount /dev/sda3 /mnt/home
+mount /dev/sdc3 /mnt/home
 
 echo 'Ваша разметка диска'
 fdisk -l
