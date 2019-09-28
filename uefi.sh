@@ -2,20 +2,17 @@ echo 'создание разделов'
 (
   echo g;
   echo n;
-  echo;
-  echo;
+  echo 1;
   echo;
   echo +20G;
 
   echo n;
-  echo;
-  echo;
+  echo 2;
   echo;
   echo +500M;
 
   echo n;
-  echo;
-  echo;
+  echo 3;
   echo;
   echo;
 
