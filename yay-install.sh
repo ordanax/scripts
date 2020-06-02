@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# Install script yay
-# autor: Alex Creio https://cvc.hashbase.io/
-
-# wget git.io/yay-install.sh && sh yay-install.sh
 
 sudo pacman -S --noconfirm --needed wget curl git 
 git clone https://aur.archlinux.org/yay-bin.git
