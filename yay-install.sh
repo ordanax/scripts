@@ -2,8 +2,8 @@
 
 sudo pacman -S --noconfirm --needed wget curl git 
 git clone https://aur.archlinux.org/yay.git
-cd yay-bin
+cd yay
 # makepkg -si
 makepkg -si --skipinteg
 cd ..
-rm -rf yay-bin
+rm -rf yay
