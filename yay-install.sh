@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#yay-bin change to yay
 
 sudo pacman -S --noconfirm --needed wget curl git 
 git clone https://aur.archlinux.org/yay.git
